@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <title>Uriel Belo - 3D designer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h1 {
+            font-family: 'Staatliches', cursive;
+            font-size: 90px;
+            text-align: center;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: white;
+            text-shadow: blue 0px 0px 10px;
+        }
+        .background {
+            background-image: linear-gradient(to bottom, aliceblue, lightblue, blue, midnightblue);
+        }
+        .siteBody {
+            background-color: white;
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+            border-left: 6px solid black;
+            border-right: 6px solid black;
+        }
+        .title {
+            background-color: aqua;
+        }
+        .textdescription {
+            font-size: 22px;
+            color: darkslategray;
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+            margin-top: 3vh;
+        }
+        .textdescription a {
+            text-decoration: none;
+            color: red;
+        }
+        #bigHousePicture {
+            width: 100%;
+        }
+        section {
+            border-top: 2px dashed blue;
+            border-bottom: 2px dashed blue;
+        }
+        .grid {
+            display: grid;
+            margin-left: auto;
+            margin-right: auto;
+            width: 98%;
+        }
+        .grid img {
+            width: 100%;
+            border: 2px solid white;
+        }
+        @media (max-width: 400) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        @media (min-width: 600px) {
+            .grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        @media (min-width: 1000px) {
+            .grid {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+            .grid img {
+                filter: sepia(2);
+            }
+            .grid img:hover{
+                filter: sepia(0);
+            }
+        }
+        .contact {
+            color: darkslategray;
+            font-size: 26px;
+            text-align: center;
+        }
+        .contact h2{
+            font-size: 50px;
+        }
+        .contact a{
+            color: red;
+            text-decoration: none;
+        }
+        .contact img{
+            width: 3vw;
+            margin-top: 2vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="siteBody">
+            <section>
+                <div class="title">
+                    <h1>URIEL BELO</h1><br>
+                    <h1>3D DESIGNER</h1>
+                </div>
+            </section>
+            <div class="layout">
+                <section>
+                    <figure>
+                        <img src="./resurces/1VistaDaEntradaPeloPortal.jpg" alt="Mansão muito bonita" id="bigHousePicture">
+                    </figure>
+                </section>
+                <section>
+                    <div class="textdescription">
+                        <p><i>Graças as mais atuais técnologias do mercado de produção 3D, a visualização da realidade dentro de um ambiente virtual se tornou acessível a todos, desta forma, qualquer um pode visualizar sua construção, projeto, antes da sua conclusão.</i></p><br>
+                        <p><i>A acensão do mercado de maquetes eletrônicas foi exponensial nos últimos anos, ninguém aguenta mais ficar perdido na planta-baixa do arquiteto, ou ficar em dúvida se a palheta de cores vai combinar com a profundidade do ambiente, o futuro chegou, por isso, entre em <a href=".contact">contato</a> logo comigo, teremos uma ótima conversa, e você poderá visualizar com total clareza a sua casa dos sonhos, sem ter dúvida de nada.</i></p><br>
+                    </div>
+                </section>
+            </div>
+            <div class="folio">
+                <section>
+                    <div class="grid">
+                        <img src="./resurces/grid/grid1.jpg" alt="grid1">
+                        <img src="./resurces/grid/grid2.jpg" alt="grid2">
+                        <img src="./resurces/grid/grid3.jpg" alt="grid3">
+
+                        <img src="./resurces/grid/grid4.jpg" alt="grid4">
+                        <img src="./resurces/grid/grid5.jpg" alt="grid5">
+                        <img src="./resurces/grid/grid6.jpg" alt="grid6">
+
+                        <img src="./resurces/grid/grid7.jpg" alt="grid7">
+                        <img src="./resurces/grid/grid8.jpg" alt="grid8">
+                        <img src="./resurces/grid/grid9.jpg" alt="grid9">
+                    </div>
+                </section>
+            </div>
+            <div class="contact">
+                <section>
+                    <h2>ENTRE EM CONTATO:</h2><br>
+                    <div class="whatsapp">
+                        <img src="./resurces/logoWhats.png" alt="LogoWhatsApp">
+                        <a href="tel:+55-17-98841-1354">(17) 98841-1354</a>
+                    </div>
+                    <div class="email">
+                        <img src="./resurces/logoGmail.png" alt="MailLogo">
+                        <a href="mailto:urielhbelo@gmail.com?subject=Quero%20uma%20maquete%20Eletrônica%20Sr.Belo">Correio Eletrônico</a>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
